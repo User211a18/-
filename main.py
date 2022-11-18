@@ -41,8 +41,12 @@ def main():
               f'\tcount: {count}'
               f'\n\tpercуте: {count/all_count * 100}'
               f'\n\tmean: {sum(data[key])/count}'
-              f'\n\tmax: {max(data[key])}'
-              f'\n\tmedian: {data[key][count//2]}')
+              f'\n\tmax: {max(data[key])}')
+        if count%2==1:
+            print(f'\n\tmedian: {data[key][count//2]}')
+        else:
+            print(f'\n\'tmedian: median not found')
+                
 
 
 if __name__ == "__main__":
